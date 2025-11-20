@@ -49,21 +49,21 @@ This system integrates:
 
 ```mermaid
 graph TD
-    User([User]) --> |Camera Input| Camera[Camera Frame Capture]
+    User[User] --> |Camera Input| Camera[Camera Frame Capture]
 
     Camera --> Router{Scene Type Detector}
 
-    Router -->|Object| ObjDetect[Object Detection (OpenCV)]
-    Router -->|Text| Ocr[Tesseract OCR]
-    Router -->|Face| FaceRec[CNN-based Face Recognition]
+    Router --> |Object| ObjDetect[Object Detection using OpenCV]
+    Router --> |Text| Ocr[Tesseract OCR]
+    Router --> |Face| FaceRec[CNN-based Face Recognition]
 
     ObjDetect --> Processor[Result Processing]
     Ocr --> Processor
     FaceRec --> Processor
 
     Processor --> TTS[Text-to-Speech Engine]
-    TTS --> Output["Audio Output to User"]
-    
+    TTS --> Output[Audio Output to User]
+
     classDef input fill:#e6f7ff,stroke:#1890ff,stroke-width:2px
     classDef process fill:#f6ffed,stroke:#52c41a,stroke-width:1px
     classDef decision fill:#fff7e6,stroke:#fa8c16,stroke-width:1px
@@ -73,3 +73,4 @@ graph TD
     class Camera,ObjDetect,Ocr,FaceRec,Processor,TTS process
     class Router decision
     class Output output
+
