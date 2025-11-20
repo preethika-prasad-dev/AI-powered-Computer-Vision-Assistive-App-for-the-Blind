@@ -1,0 +1,31 @@
+livekit-agents[deepgram,elevenlabs,tavus]>=1.0.0
+python-dotenv>=1.0.0
+#openai>=1.0.0
+librosa>=0.10.0
+numpy>=1.20.0
+silero   
+livekit-agents[deepgram,elevenlabs]>=1.0.0
+livekit-plugins-deepgram>=1.0.0
+livekit-plugins-openai>=1.0.0
+livekit-plugins-silero>=1.0.0
+livekit-plugins-elevenlabs>=1.0.0   
+livekit-plugins-tavus>=1.0.0
+livekit>=1.0.0
+livekit-api>=1.0.0
+
+python-dotenv>=0.19.0
+langchain-community
+duckduckgo-search
+# For Groq API integration
+groq
+# For image conversion
+opencv-python
+
+# For Google Places API integration
+langchain-google-community>=0.0.1
+googlemaps
+
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
